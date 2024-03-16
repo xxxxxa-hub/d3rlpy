@@ -5,12 +5,14 @@ import random
 import re
 from typing import Any, Dict, Optional, Tuple
 from urllib import request
-
+import torch
+from torch.utils.data import Dataset
 import gym
 import numpy as np
 from gym.wrappers.time_limit import TimeLimit
+import h5py
 
-from .dataset import (
+from . import (
     BasicTrajectorySlicer,
     BasicTransitionPicker,
     Episode,
@@ -23,11 +25,10 @@ from .dataset import (
     TrajectorySlicerProtocol,
     TransitionPickerProtocol,
     create_infinite_replay_buffer,
-    load_v1,
 )
-from .envs import ChannelFirst, FrameStack
-from .logging import LOG
-from .types import NDArray, UInt8NDArray
+from ..envs import ChannelFirst, FrameStack
+from ..logging import LOG
+from ..types import NDArray, UInt8NDArray
 
 __all__ = [
     "DATA_DIRECTORY",
@@ -36,6 +37,7 @@ __all__ = [
     "CARTPOLE_RANDOM_URL",
     "PENDULUM_URL",
     "PENDULUM_RANDOM_URL",
+    "D4rlDataset",
     "get_cartpole",
     "get_pendulum",
     "get_atari",
@@ -52,12 +54,44 @@ PENDULUM_URL = f"{DROPBOX_URL}/ukkucouzys0jkfs/pendulum_v1.1.0.h5?dl=1"
 PENDULUM_RANDOM_URL = f"{DROPBOX_URL}/hhbq9i6ako24kzz/pendulum_random_v1.1.0.h5?dl=1"  # pylint: disable=line-too-long
 
 
+
+def load_v1(f):
+    r"""Loads v1 dataset data.
+
+    Args:
+        f: Binary file-like object.
+
+    Returns:
+        Sequence of episodes.
+    """
+    with h5py.File(f, "r") as h5:
+        observations = h5["observations"][()]
+        actions = h5["actions"][()]
+        rewards = h5["rewards"][()]
+        terminals = h5["terminals"][()]
+
+        if "episode_terminals" in h5:
+            episode_terminals = h5["episode_terminals"][()]
+        else:
+            episode_terminals = None
+
+    if episode_terminals is None:
+        timeouts = None
+    else:
+        timeouts = np.logical_and(np.logical_not(terminals), episode_terminals)
+
+    return {
+      "actions": actions,
+      "observations": observations,
+      "rewards": rewards,
+      "terminals": terminals,
+      "timeouts": timeouts
+      }
+
+
 def get_cartpole(
-    dataset_type: str = "replay",
-    transition_picker: Optional[TransitionPickerProtocol] = None,
-    trajectory_slicer: Optional[TrajectorySlicerProtocol] = None,
-    render_mode: Optional[str] = None,
-) -> Tuple[ReplayBuffer, gym.Env[NDArray, int]]:
+    dataset_type: str = "replay"
+):
     """Returns cartpole dataset and environment.
 
     The dataset is automatically downloaded to ``d3rlpy_data/cartpole.h5`` if
@@ -93,25 +127,13 @@ def get_cartpole(
     # load dataset
     with open(data_path, "rb") as f:
         episodes = load_v1(f)
-    dataset = ReplayBuffer(
-        InfiniteBuffer(),
-        episodes=episodes,
-        transition_picker=transition_picker,
-        trajectory_slicer=trajectory_slicer,
-    )
 
-    # environment
-    env = gym.make("CartPole-v1", render_mode=render_mode)
-
-    return dataset, env
+    return episodes
 
 
 def get_pendulum(
-    dataset_type: str = "replay",
-    transition_picker: Optional[TransitionPickerProtocol] = None,
-    trajectory_slicer: Optional[TrajectorySlicerProtocol] = None,
-    render_mode: Optional[str] = None,
-) -> Tuple[ReplayBuffer, gym.Env[NDArray, NDArray]]:
+    dataset_type: str = "replay"
+):
     """Returns pendulum dataset and environment.
 
     The dataset is automatically downloaded to ``d3rlpy_data/pendulum.h5`` if
@@ -146,17 +168,191 @@ def get_pendulum(
     # load dataset
     with open(data_path, "rb") as f:
         episodes = load_v1(f)
-    dataset = ReplayBuffer(
-        InfiniteBuffer(),
-        episodes=episodes,
-        transition_picker=transition_picker,
-        trajectory_slicer=trajectory_slicer,
-    )
+    return episodes
 
-    # environment
-    env = gym.make("Pendulum-v1", render_mode=render_mode)
+def augment_data(dataset,
+                 noise_scale):
+  """Augments the data.
 
-    return dataset, env
+  Args:
+    dataset: Dictionary with data.
+    noise_scale: Scale of noise to apply.
+
+  Returns:
+    Augmented data.
+  """
+  noise_std = np.std(np.concatenate(dataset['rewards'], 0))
+  for k, v in dataset.items():
+    dataset[k] = np.repeat(v, 3, 0)
+
+  dataset['rewards'][1::3] += noise_std * noise_scale
+  dataset['rewards'][2::3] -= noise_std * noise_scale
+
+  return dataset
+
+
+def weighted_moments(x, weights):
+  mean = np.sum(x * weights, 0) / np.sum(weights)
+  sqr_diff = np.sum((x - mean)**2 * weights, 0)
+  std = np.sqrt(sqr_diff / (weights.sum() - 1))
+  return mean, std
+
+
+class D4rlDataset(Dataset):
+  """Dataset class for policy evaluation."""
+
+  # pylint: disable=super-init-not-called
+  def __init__(self,
+               d4rl_dataset,
+               normalize_states = False,
+               normalize_rewards = False,
+               eps = 1e-5,
+               noise_scale = 0.0,
+               bootstrap = True):
+    """Processes data from D4RL environment.
+
+    Args:
+      d4rl_env: gym.Env corresponding to D4RL environment.
+      normalize_states: whether to normalize the states.
+      normalize_rewards: whether to normalize the rewards.
+      eps: Epsilon used for normalization.
+      noise_scale: Data augmentation noise scale.
+      bootstrap: Whether to generated bootstrapped weights.
+    """
+    dataset = dict(
+        trajectories=dict(
+            states=[],
+            actions=[],
+            next_states=[],
+            rewards=[],
+            masks=[]))
+    # d4rl_dataset = d4rl_env.get_dataset()
+    dataset_length = len(d4rl_dataset['actions'])
+    new_trajectory = True
+    for idx in range(dataset_length):
+      if new_trajectory:
+        trajectory = dict(
+            states=[], actions=[], next_states=[], rewards=[], masks=[])
+
+      trajectory['states'].append(d4rl_dataset['observations'][idx])
+      trajectory['actions'].append(d4rl_dataset['actions'][idx])
+      trajectory['rewards'].append(d4rl_dataset['rewards'][idx])
+      trajectory['masks'].append(1.0 - d4rl_dataset['terminals'][idx])
+      if not new_trajectory:
+        trajectory['next_states'].append(d4rl_dataset['observations'][idx])
+
+      end_trajectory = (d4rl_dataset['terminals'][idx] or
+                        d4rl_dataset['timeouts'][idx])
+      if end_trajectory:
+        trajectory['next_states'].append(d4rl_dataset['observations'][idx])
+        if d4rl_dataset['timeouts'][idx] and not d4rl_dataset['terminals'][idx]:
+          for key in trajectory:
+            del trajectory[key][-1]
+        if trajectory['actions']:
+          for k, v in trajectory.items():
+            assert len(v) == len(trajectory['actions'])
+            dataset['trajectories'][k].append(np.array(v, dtype=np.float32))
+          print('Added trajectory %d with length %d.' % (
+              len(dataset['trajectories']['actions']),
+              len(trajectory['actions'])))
+
+      new_trajectory = end_trajectory
+
+    if noise_scale > 0.0:
+      dataset['trajectories'] = augment_data(dataset['trajectories'],  # pytype: disable=wrong-arg-types  # dict-kwargs
+                                             noise_scale)
+
+    dataset['trajectories']['steps'] = [
+        np.arange(len(state_trajectory))
+        for state_trajectory in dataset['trajectories']['states']
+    ]
+
+    dataset['initial_states'] = np.stack([
+        state_trajectory[0]
+        for state_trajectory in dataset['trajectories']['states']
+    ])
+
+    num_trajectories = len(dataset['trajectories']['states'])
+    if bootstrap:
+      dataset['initial_weights'] = np.random.multinomial(
+          num_trajectories, [1.0 / num_trajectories] * num_trajectories,
+          1).astype(np.float32)[0]
+    else:
+      dataset['initial_weights'] = np.ones(num_trajectories, dtype=np.float32)
+
+    dataset['trajectories']['weights'] = []
+    for i in range(len(dataset['trajectories']['masks'])):
+      dataset['trajectories']['weights'].append(
+          np.ones_like(dataset['trajectories']['masks'][i]) *
+          dataset['initial_weights'][i])
+
+    dataset['initial_weights'] = torch.tensor(
+        dataset['initial_weights'],dtype=torch.float32)
+    dataset['initial_states'] = torch.tensor(dataset['initial_states'],dtype=torch.float32)
+    for k, v in dataset['trajectories'].items():
+      if 'initial' not in k:
+        dataset[k] = torch.tensor(
+            np.concatenate(dataset['trajectories'][k], axis=0),dtype=torch.float32)
+
+    self.states = dataset['states']
+    self.actions = dataset['actions']
+    self.next_states = dataset['next_states']
+    self.masks = dataset['masks']
+    self.weights = dataset['weights']
+    self.rewards = dataset['rewards']
+    self.steps = dataset['steps']
+
+    self.initial_states = dataset['initial_states']
+    self.initial_weights = dataset['initial_weights']
+
+    self.eps = torch.tensor(eps,dtype=torch.float32)
+    self.model_filename = None
+
+    if normalize_states:
+      self.state_mean = torch.mean(self.states, dim=0)
+      self.state_std = torch.std(self.states, dim=0, unbiased=False)
+
+      self.initial_states = self.normalize_states(self.initial_states)
+      self.states = self.normalize_states(self.states)
+      self.next_states = self.normalize_states(self.next_states)
+    else:
+      self.state_mean = 0.0
+      self.state_std = 1.0
+
+    if normalize_rewards:
+      self.reward_mean = torch.mean(self.rewards)
+      if torch.min(self.masks) == 0.0:
+        self.reward_mean = torch.zeros_like(self.reward_mean)
+      self.reward_std = torch.std(self.rewards, unbiased=False)
+
+      self.rewards = self.normalize_rewards(self.rewards)
+    else:
+      self.reward_mean = 0.0
+      self.reward_std = 1.0
+  # pylint: enable=super-init-not-called
+
+  def normalize_states(self, states):
+    dtype = torch.float32
+    return ((states - self.state_mean) /
+            torch.maximum(torch.tensor(self.eps,dtype=dtype), self.state_std))
+
+  def unnormalize_states(self, states):
+    dtype = torch.float32
+    return (states * torch.maximum(torch.tensor(self.eps,dtype=dtype), self.state_std)
+            + self.state_mean)
+
+  def normalize_rewards(self, rewards):
+    return (rewards - self.reward_mean) / torch.maximum(self.reward_std, self.eps)
+
+  def unnormalize_rewards(self, rewards):
+    return rewards * torch.maximum(self.reward_std, self.eps) + self.reward_mean
+
+  def __len__(self):
+    return len(self.states)
+
+  def __getitem__(self, idx):
+        return (self.states[idx], self.actions[idx], self.next_states[idx],
+                self.rewards[idx], self.masks[idx], self.weights[idx], self.steps[idx])
 
 
 def _stack_frames(episode: Episode, num_stack: int) -> Episode:

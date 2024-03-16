@@ -6,7 +6,6 @@ import torch
 from . import (
     algos,
     dataset,
-    datasets,
     envs,
     logging,
     metrics,
@@ -24,7 +23,6 @@ from .healthcheck import run_healthcheck
 __all__ = [
     "algos",
     "dataset",
-    "datasets",
     "envs",
     "logging",
     "metrics",
