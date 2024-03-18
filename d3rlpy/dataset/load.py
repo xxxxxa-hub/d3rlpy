@@ -6,11 +6,12 @@ import re
 from typing import Any, Dict, Optional, Tuple
 from urllib import request
 import torch
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, DataLoader
 import gym
 import numpy as np
 from gym.wrappers.time_limit import TimeLimit
 import h5py
+import pdb
 
 from . import (
     BasicTrajectorySlicer,
@@ -38,6 +39,7 @@ __all__ = [
     "PENDULUM_URL",
     "PENDULUM_RANDOM_URL",
     "D4rlDataset",
+    "infinite_loader",
     "get_cartpole",
     "get_pendulum",
     "get_atari",
@@ -353,6 +355,13 @@ class D4rlDataset(Dataset):
   def __getitem__(self, idx):
         return (self.states[idx], self.actions[idx], self.next_states[idx],
                 self.rewards[idx], self.masks[idx], self.weights[idx], self.steps[idx])
+
+def infinite_loader(dataloader, behavior_dataset):
+    while True:
+        for data in dataloader:
+            yield data
+        # 当 DataLoader 的数据遍历完毕，重新创建 DataLoader
+        dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
 
 
 def _stack_frames(episode: Episode, num_stack: int) -> Episode:

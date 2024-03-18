@@ -3,6 +3,7 @@ import pdb
 import time
 from ..envs import GymEnv
 from ..interface import QLearningAlgoProtocol, StatefulTransformerAlgoProtocol
+from collections import defaultdict
 
 __all__ = [
     "evaluate_qlearning_with_environment",
@@ -15,7 +16,8 @@ def evaluate_qlearning_with_environment(
     env: GymEnv,
     n_trials: int = 10,
     epsilon: float = 0.0,
-    gamma: float = 1.0
+    gamma: float = 1.0,
+    collect: bool = False
 ) -> float:
     """Returns average environment score.
 
@@ -44,6 +46,8 @@ def evaluate_qlearning_with_environment(
     """
     episode_rewards_1 = []
     episode_rewards = []
+    transitions = defaultdict(list)
+
     for _ in range(n_trials):
         observation, _ = env.reset()
         episode_reward_1 = 0.0
@@ -57,19 +61,29 @@ def evaluate_qlearning_with_environment(
             else:
                 action = algo.predict(np.expand_dims(observation, axis=0))[0]
 
-
+            # store observation, action
+            transitions["actions"].append(action)
+            transitions["observations"].append(observation)
             observation, reward, done, truncated, _ = env.step(action)
-            # observation, reward, done, _ = env.step(action)
             episode_reward_1 += float(reward)
             episode_reward += gamma**t * float(reward)
+
+            transitions["rewards"].append(reward)
+            transitions["terminals"].append(1.0 if done else 0.0)
+            transitions["timeouts"].append(truncated)
             t += 1
 
             if done or truncated:
                 break
+        transitions["actions"] = np.array(transitions["actions"],dtype=np.float32)
+        transitions["observations"] = np.array(transitions["observations"],dtype=np.float32)
+        transitions["rewards"] = np.array(transitions["rewards"],dtype=np.float32)
+        transitions["terminals"] = np.array(transitions["terminals"],dtype=np.float32)
+        transitions["timeouts"] = np.array(transitions["timeouts"])
         episode_rewards_1.append(episode_reward_1)
         episode_rewards.append(episode_reward)
     
-    return float(np.mean(episode_rewards_1)), float(np.mean(episode_rewards))
+    return float(np.mean(episode_rewards_1)), float(np.mean(episode_rewards)), transitions
 
 
 def evaluate_transformer_with_environment(

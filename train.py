@@ -5,7 +5,7 @@ import d3rlpy
 import pickle
 import gym
 import torch
-from d3rlpy.dataset import ReplayBuffer_, D4rlDataset, get_pendulum
+from d3rlpy.dataset import ReplayBuffer_, D4rlDataset, get_pendulum, infinite_loader
 from d3rlpy.algos.qlearning.model_sac import Model
 from torch.utils.data import DataLoader
 
@@ -31,10 +31,14 @@ def main() -> None:
     parser.add_argument("--method", type=str, default="new") # "new" or "baseline"
     parser.add_argument('--upload', dest='upload', action='store_true', help='Enable upload')
     parser.add_argument('--no-upload', dest='upload', action='store_false', help='Disable upload')
+    parser.add_argument('--collect', dest='collect', action='store_true', help='Enable collect')
+    parser.add_argument('--no-collect', dest='collect', action='store_false', help='Disable collect')
     parser.set_defaults(upload=False)
+    parser.set_defaults(collect=True)
 
 
     args = parser.parse_args()
+    # pdb.set_trace()
     if "Pendulum" in args.dataset:
         env = gym.make("Pendulum-v1")
         d3rlpy.seed(args.seed)
@@ -54,15 +58,7 @@ def main() -> None:
         bootstrap=False)
 
     dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
-
-    def infinite_loader(dataloader):
-        while True:
-            for data in dataloader:
-                yield data
-            # 当 DataLoader 的数据遍历完毕，重新创建 DataLoader
-            dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
-
-    inf_loader = infinite_loader(dataloader)
+    inf_loader = infinite_loader(dataloader, behavior_dataset)
 
     sac1 = d3rlpy.algos.SACConfig(
         actor_learning_rate=args.actor_lr,
@@ -83,6 +79,7 @@ def main() -> None:
         model = Model(sac1=sac1,sac2=sac2)
         model.fit(
             inf_loader,
+            d4rl_dataset,
             buffer,
             n_steps=args.n_epoch * args.n_steps_per_epoch,
             n_steps_per_epoch=args.n_steps_per_epoch,
@@ -104,11 +101,13 @@ def main() -> None:
             estimator_lr_decay = args.estimator_lr_decay,
             algo = args.algo,
             ratio = args.ratio,
-            upload = args.upload
+            upload = args.upload,
+            collect = args.collect
         )
     elif args.method == "baseline":
         sac1.fit(
             inf_loader,
+            d4rl_dataset,
             n_steps=args.n_epoch * args.n_steps_per_epoch,
             n_steps_per_epoch=args.n_steps_per_epoch,
             save_interval=10,
@@ -123,7 +122,8 @@ def main() -> None:
             decay_epoch=args.decay_epoch,
             lr_decay=args.lr_decay,
             algo = args.algo,
-            upload = args.upload
+            upload = args.upload,
+            collect = args.collect
         )
     
 

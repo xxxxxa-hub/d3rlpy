@@ -23,14 +23,17 @@ from tqdm.auto import tqdm, trange
 from typing_extensions import Self
 import torch.optim as optim
 import wandb
+from torch.utils.data import DataLoader
 from ...base import ImplBase, LearnableBase, LearnableConfig, save_config
 from ...constants import IMPL_NOT_INITIALIZED_ERROR, ActionSpace
 from ...dataset import (
     ReplayBuffer,
+    D4rlDataset,
     TransitionMiniBatch,
     check_non_1d_array,
     create_fifo_replay_buffer,
     is_tuple_shape,
+    infinite_loader
 )
 from ...envs import GymEnv
 from ...logging import (
@@ -374,6 +377,7 @@ class QLearningAlgoBase(
     def fit(
         self,
         dataloader: Generator,
+        dataset: Optional[Dict[str, float]],
         n_steps: int,
         n_steps_per_epoch: int = 10000,
         experiment_name: Optional[str] = None,
@@ -389,7 +393,8 @@ class QLearningAlgoBase(
         decay_epoch: int = 5,
         lr_decay: float = 0.96,
         algo: str = None,
-        upload: bool = True
+        upload: bool = False,
+        collect: bool = False
     ) -> List[Tuple[int, Dict[str, float]]]:
         """Trains with given dataset.
 
@@ -421,6 +426,7 @@ class QLearningAlgoBase(
         """
         self.fitter(
                 dataloader,
+                dataset,
                 n_steps,
                 n_steps_per_epoch,
                 experiment_name,
@@ -436,13 +442,15 @@ class QLearningAlgoBase(
                 decay_epoch,
                 lr_decay,
                 algo,
-                upload
+                upload,
+                collect
             )
         
 
     def fitter(
         self,
         dataloader: Generator,
+        dataset: Optional[Dict[str, float]],
         n_steps: int,
         n_steps_per_epoch: int = 10000,
         experiment_name: Optional[str] = None,
@@ -458,7 +466,8 @@ class QLearningAlgoBase(
         decay_epoch: int = 5,
         lr_decay: float = 0.96,
         algo: str = None,
-        upload: bool = True
+        upload: bool = False,
+        collect: bool = False
     ) -> Generator[Tuple[int, Dict[str, float]], None, None]:
         """Iterate over epochs steps to train with the given dataset. At each
         iteration algo methods and properties can be changed or queried.
@@ -571,7 +580,20 @@ class QLearningAlgoBase(
             if epoch % 5 ==0:
                 if evaluators:
                     for name, evaluator in evaluators.items():
-                        test_score_1, test_score = evaluator(self) # rollout 10条trajectory时长3.75s
+                        test_score_1, test_score, transitions = evaluator(self) # rollout 10条trajectory时长3.75s
+                
+                if collect:
+                    for k,v in transitions.items():
+                        dataset[k] = np.append(dataset[k], v, axis=0)
+
+                    behavior_dataset = D4rlDataset(
+                        dataset,
+                        normalize_states=False,
+                        normalize_rewards=False,
+                        noise_scale=0.0,
+                        bootstrap=False)
+                    new_dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
+                    dataloader = infinite_loader(new_dataloader,behavior_dataset)
 
                 with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
                     writer = csv.writer(file)

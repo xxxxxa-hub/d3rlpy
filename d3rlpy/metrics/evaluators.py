@@ -519,18 +519,21 @@ class EnvironmentEvaluator(EvaluatorProtocol):
     _n_trials: int
     _epsilon: float
     _gamma: float
+    _collect: bool
 
     def __init__(
         self,
         env: gym.Env[Any, Any],
         n_trials: int = 10,
         epsilon: float = 0.0,
-        gamma: float = 1.0
+        gamma: float = 1.0,
+        collect: bool = False
     ):
         self._env = env
         self._n_trials = n_trials
         self._epsilon = epsilon
         self._gamma = gamma
+        self._collect = collect
 
     def __call__(
         self, algo: QLearningAlgoProtocol
@@ -540,5 +543,6 @@ class EnvironmentEvaluator(EvaluatorProtocol):
             env=self._env,
             n_trials=self._n_trials,
             epsilon=self._epsilon,
-            gamma=self._gamma
+            gamma=self._gamma,
+            collect=self._collect
         )

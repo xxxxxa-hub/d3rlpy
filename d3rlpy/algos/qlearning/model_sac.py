@@ -32,10 +32,12 @@ from ...constants import IMPL_NOT_INITIALIZED_ERROR, ActionSpace
 from ...dataset import (
     ReplayBuffer,
     ReplayBuffer_,
+    D4rlDataset,
     TransitionMiniBatch,
     check_non_1d_array,
     create_fifo_replay_buffer,
     is_tuple_shape,
+    infinite_loader
 )
 from ...envs import GymEnv
 from ...logging import (
@@ -100,6 +102,7 @@ class Model():
     def fit(
         self,
         dataloader: Generator,
+        dataset: Optional[Dict[str, float]],
         buffer: Optional[ReplayBuffer_] = None,
         n_steps: int = 500000,
         n_steps_per_epoch: int = 10000,
@@ -120,7 +123,8 @@ class Model():
         estimator_lr_decay: float = 0.86,
         algo: Optional[str] = None,
         ratio: int = 1,
-        upload: bool = True
+        upload: bool = False,
+        collect: bool = False
     ) -> List[Tuple[int, Dict[str, float]]]:
         """Trains with given dataset.
 
@@ -152,6 +156,7 @@ class Model():
         """
         self.fitter(
             dataloader,
+            dataset,
             buffer,
             n_steps,
             n_steps_per_epoch,
@@ -172,13 +177,15 @@ class Model():
             estimator_lr_decay,
             algo,
             ratio,
-            upload
+            upload,
+            collect
         )
 
 
     def fitter(
         self,
         dataloader: Generator,
+        dataset: Optional[Dict[str, float]],
         buffer: Optional[ReplayBuffer_] = None,
         n_steps: int = 500000,
         n_steps_per_epoch: int = 10000,
@@ -199,7 +206,8 @@ class Model():
         estimator_lr_decay: float = 0.86,
         algo: Optional[str] = None,
         ratio: int = 1,
-        upload: bool = True
+        upload: bool = False,
+        collect: bool = False
     ) -> Generator[Tuple[int, Dict[str, float]], None, None]:
         """Iterate over epochs steps to train with the given dataset. At each
         iteration algo methods and properties can be changed or queried.
@@ -381,8 +389,21 @@ class Model():
             if epoch % 5 ==0:
                 if evaluators:
                     for name, evaluator in evaluators.items():
-                        test_score_1, test_score = evaluator(self.sac1)
+                        test_score_1, test_score, transitions = evaluator(self.sac1)
                 
+                if collect:
+                    for k,v in transitions.items():
+                        dataset[k] = np.append(dataset[k], v, axis=0)
+
+                    behavior_dataset = D4rlDataset(
+                        dataset,
+                        normalize_states=False,
+                        normalize_rewards=False,
+                        noise_scale=0.0,
+                        bootstrap=False)
+                    new_dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
+                    dataloader = infinite_loader(new_dataloader,behavior_dataset)
+
                 # Generate R
                 save_policy(self.sac1,dir_path)
                 run(device=self.sac1._device.split(":")[-1],
