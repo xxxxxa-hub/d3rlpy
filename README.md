@@ -9,7 +9,7 @@ pip install -e .
 
 # Offline Training
 ```
-python baseline_sac.py --dataset Pendulum-replay --seed 0 --gpu cuda:0 --actor_lr 0.001 --critic_lr 0.001 --decay_epoch 1 --lr_decay 1.0 --ratio 1 --estimator_lr 0.003 --estimator_lr_decay 0.8 --n_epoch 100 --n_steps_per_epoch 500 --n_episodes 1 --algo iw --method baseline --upload
+python train.py --dataset Pendulum-replay --seed 0 --gpu cuda:0 --actor_lr 0.001 --critic_lr 0.001 --decay_epoch 1 --lr_decay 1.0 --ratio 1 --estimator_lr 0.003 --estimator_lr_decay 0.8 --n_epoch 100 --n_steps_per_epoch 500 --n_episodes 1 --algo iw --method baseline --upload
 ```
 
 `dataset`: The offline dataset we use for training.
