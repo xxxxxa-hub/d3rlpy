@@ -40,6 +40,8 @@ python baseline_sac.py --dataset Pendulum-replay --seed 0 --gpu cuda:0 --actor_l
 
 `algo`: Algorithm of estimator training.
 
-`method`: Paradigm of training used in the baseline.
+`method`: Paradigm of training. The default method is "baseline".
 
-`upload`: Upload the result to wandb for visualization.
+`upload`: Whether to upload the result to wandb for visualization.
+
+`collect`: Whether to collect transitions during online evaluation.
