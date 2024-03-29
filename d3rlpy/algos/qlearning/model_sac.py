@@ -101,14 +101,9 @@ class Model():
 
     def fit(
         self,
-        dataloader: Generator,
         dataset: Optional[Dict[str, float]],
         buffer: Optional[ReplayBuffer_] = None,
-        n_steps: int = 500000,
-        n_steps_per_epoch: int = 10000,
-        experiment_name: Optional[str] = None,
-        with_timestamp: bool = True,
-        logger_adapter: LoggerAdapterFactory = FileAdapterFactory(),
+        n_epoch: int = 100,
         show_progress: bool = True,
         save_interval: int = 1,
         evaluators: Optional[Dict[str, EvaluatorProtocol]] = None,
@@ -123,6 +118,7 @@ class Model():
         estimator_lr_decay: float = 0.86,
         algo: Optional[str] = None,
         ratio: int = 1,
+        temp: float = 1.0,
         upload: bool = False,
         collect: bool = False
     ) -> List[Tuple[int, Dict[str, float]]]:
@@ -155,14 +151,9 @@ class Model():
             List of result tuples (epoch, metrics) per epoch.
         """
         self.fitter(
-            dataloader,
             dataset,
             buffer,
-            n_steps,
-            n_steps_per_epoch,
-            experiment_name,
-            with_timestamp,
-            logger_adapter,
+            n_epoch,
             show_progress,
             save_interval,
             evaluators,
@@ -177,6 +168,7 @@ class Model():
             estimator_lr_decay,
             algo,
             ratio,
+            temp,
             upload,
             collect
         )
@@ -184,14 +176,9 @@ class Model():
 
     def fitter(
         self,
-        dataloader: Generator,
         dataset: Optional[Dict[str, float]],
         buffer: Optional[ReplayBuffer_] = None,
-        n_steps: int = 500000,
-        n_steps_per_epoch: int = 10000,
-        experiment_name: Optional[str] = None,
-        with_timestamp: bool = True,
-        logger_adapter: LoggerAdapterFactory = FileAdapterFactory(),
+        n_epoch: int = 100,
         show_progress: bool = True,
         save_interval: int = 1,
         evaluators: Optional[Dict[str, EvaluatorProtocol]] = None,
@@ -202,10 +189,12 @@ class Model():
         env_name: Optional[str] = None,
         decay_epoch: int = 5,
         lr_decay: float = 0.96,
+        collect_epoch: int = 30,
         estimator_lr: float = 0.003,
         estimator_lr_decay: float = 0.86,
         algo: Optional[str] = None,
         ratio: int = 1,
+        temp: float = 1.0,
         upload: bool = False,
         collect: bool = False
     ) -> Generator[Tuple[int, Dict[str, float]], None, None]:
@@ -274,9 +263,7 @@ class Model():
 
 
         # training loop
-        n_epochs = n_steps // n_steps_per_epoch
         total_step = 0
-        # index = 0
         A = torch.zeros((self.sac1._config.batch_size,1),device=self.sac1._device)
 
         scheduler_actor_1 = optim.lr_scheduler.StepLR(self.sac1._impl.modules.actor_optim, step_size=decay_epoch, gamma=lr_decay)
@@ -287,43 +274,54 @@ class Model():
 
         if upload:
             new_run = wandb.init(
-                project="{}".format(env_name),
-                name="New-{}-{}-{}-{}".format(self.sac1.config.actor_learning_rate,
+                project="{}-{}".format(env_name, 2),
+                name="New-{}-{}-{}-{}-{}-{}".format(self.sac1.config.actor_learning_rate,
                                         self.sac1.config.critic_learning_rate,
+                                        decay_epoch, lr_decay,
                                         ratio, algo),
                 config={"actor_learning_rate": self.sac1.config.actor_learning_rate,
                         "critic_learning_rate": self.sac1.config.critic_learning_rate,
+                        "decay_epoch": decay_epoch,
+                        "lr_decay": lr_decay,
                         "ratio": ratio,
                         "algo": algo}
             )
 
-        for epoch in range(1, n_epochs + 1):
+        for epoch in range(1, n_epoch + 1):
             print("Epoch" + str(epoch) + "...")
             '''
             store the batch.observations in the list. After updating for one epoch, calculate 
             the S_ by inputing elements in S_ to the new policy.
             '''
-            # S_i^{k,s} = (s'_i,\pi_{k,s}(s'_i))
-            # S'_i^{k,s} = (s'_i,\pi_{k+1}(s'_i))
-            # S_ stores s'_i so that S'_i^{k,s} can be calculated after one epoch
-            if epoch % 5 == 1:
-                S_ = [] # stores s'_i in xxx epochs
+            # if epoch % 5 == 1:
+            S_ = [] # stores s'_i in xxx epochs
 
             # dict to add incremental mean losses to epoch
             epoch_loss = defaultdict(list)
             inner_epoch_loss = defaultdict(list)
 
+            behavior_dataset = D4rlDataset(
+                dataset,
+                normalize_states=False,
+                normalize_rewards=False,
+                noise_scale=0.0,
+                bootstrap=False)
+            
+            dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
+            dataloader = iter(dataloader)
+
+            n_steps_per_epoch = len(behavior_dataset) // self._config.batch_size
+
             range_gen = tqdm(
                 range(n_steps_per_epoch),
                 disable=not show_progress,
-                desc=f"Epoch {int(epoch)}/{n_epochs}",
+                desc=f"Epoch {int(epoch)}/{n_epoch}",
             )
 
             if buffer.is_full():
                 buffer.extended_count -= self.sac1._config.batch_size * n_steps_per_epoch
 
             for itr in range_gen:
-                # Sample batch
                 states, actions, next_states, rewards, masks, _, _ = next(dataloader)
 
                 # Generate Transitions
@@ -358,8 +356,6 @@ class Model():
                     '''
                     # Store into buffer
                     buffer.store(S_detach_cpu,A_detach_cpu,Masks)
-                    # for i in range(self.sac1._config.batch_size):
-                    #     buffer.store(S_detach[i],A_detach[i],Masks[i])
 
                 rewards_with_incentive = rewards + A.squeeze()
                 loss = self.sac1.update(states, actions, next_states, rewards_with_incentive, masks)
@@ -386,23 +382,14 @@ class Model():
                 epoch_callback(self, epoch, total_step)
 
             # save the returns when gamma is 1.0 and 0.995
-            if epoch % 5 ==0:
+            if epoch <= collect_epoch: # epoch % 5 ==0:
                 if evaluators:
                     for name, evaluator in evaluators.items():
-                        test_score_1, test_score, transitions = evaluator(self.sac1)
+                        test_score_1, _, test_score, _, transitions = evaluator(self.sac1)
                 
                 if collect:
                     for k,v in transitions.items():
                         dataset[k] = np.append(dataset[k], v, axis=0)
-
-                    behavior_dataset = D4rlDataset(
-                        dataset,
-                        normalize_states=False,
-                        normalize_rewards=False,
-                        noise_scale=0.0,
-                        bootstrap=False)
-                    new_dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
-                    dataloader = infinite_loader(new_dataloader,behavior_dataset)
 
                 # Generate R
                 save_policy(self.sac1,dir_path)
@@ -452,9 +439,55 @@ class Model():
                 inner_dataloader = DataLoader(buffer, batch_size=256, shuffle=True, drop_last=True, num_workers=1)
                 inner_data_iterator = iter(inner_dataloader)
             
-            
+            elif epoch > collect_epoch:
+                if evaluators:
+                    for name, evaluator in evaluators.items():
+                        test_score_1_after_100, test_score_after_100, transitions = evaluator(self.sac1)
+
+                # Generate R
+                save_policy(self.sac1,dir_path)
+                run(device=self.sac1._device.split(":")[-1],
+                    env_name=env_name,
+                    lr=estimator_lr,
+                    policy_path="{}/policy.pkl".format(dir_path),
+                    lr_decay=estimator_lr_decay,
+                    seed=seed,
+                    algo=algo)
+
+                # reward - mean(rewards) should be calculated when we start to sample rather than when we collect transitions.
+                # store the rewards in the buffer, and we normalize rewards based on every seen rewards.
+                estimate = pd.read_csv("{}/ope.csv".format(dir_path)).iloc[0,0]
+                inner_reward = np.float32((estimate - test_score * (1-evaluators["environment"]._gamma)) ** 2)
+                inner_reward = -inner_reward
+
+                if inner_reward not in buffer.reward_list:
+                    buffer.reward_list.append(inner_reward)
+
+                with open("{}/estimate.csv".format(dir_path), 'a', newline='') as file:
+                    writer = csv.writer(file)
+                    writer.writerow([epoch, estimate])
+                
+                # generate S_
+                # index = min(buffer.extended_count,buffer.capacity - self.sac1._config.batch_size * n_steps_per_epoch * 5)
+                # index = buffer.extended_count
+                for batch_state in tqdm(S_):
+                    dist = build_squashed_gaussian_distribution(
+                                self.sac1._impl._modules.policy(batch_state)
+                            )
+                    batch_action, _ = dist.sample_with_log_prob()
+                    batch_action_detach = batch_action.detach()
+                    batch_state_detach = batch_state.detach()
+                    next_states_tensor = torch.cat([batch_state_detach,batch_action_detach],axis=1).cpu()
+                    inner_reward_tensor = torch.full((self.sac1._config.batch_size,), 
+                                              inner_reward,dtype=torch.float32)
+                    
+                    buffer.synchronize(next_states_tensor,inner_reward_tensor)
+                inner_dataloader = DataLoader(buffer, batch_size=256, shuffle=True, drop_last=True, num_workers=1)
+                inner_data_iterator = iter(inner_dataloader)
+
+
             # update inner loop
-            if len(buffer.reward_list) >= 2:
+            if len(buffer.reward_list) >= 10:
                 for itr in tqdm(range(n_steps_per_epoch * ratio)):
                     states_,actions_,rewards_,next_states_,masks_ = next(inner_data_iterator)
 
@@ -472,7 +505,7 @@ class Model():
                     for name, val in loss.items():
                         inner_epoch_loss["inner_" + name].append(val)
 
-            if epoch % 5 ==0:
+            if epoch <= 100:
                 with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerow([epoch, np.mean(epoch_loss["actor_loss"]), 
@@ -498,6 +531,32 @@ class Model():
                             "inner_temp": np.mean(inner_epoch_loss["inner_temp"]),
                             "Oracle_1.0": test_score_1,
                             "Oracle_0.995": test_score})
+            elif epoch > 100:
+                with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
+                    writer = csv.writer(file)
+                    writer.writerow([epoch, np.mean(epoch_loss["actor_loss"]), 
+                                        np.mean(epoch_loss["critic_loss"]),
+                                        np.mean(epoch_loss["temp_loss"]),
+                                        np.mean(epoch_loss["temp"]),
+                                        np.mean(inner_epoch_loss["inner_actor_loss"]), 
+                                        np.mean(inner_epoch_loss["inner_critic_loss"]), 
+                                        np.mean(inner_epoch_loss["inner_temp_loss"]),
+                                        np.mean(inner_epoch_loss["inner_temp"]),
+                                        test_score_1_after_100,
+                                        test_score_after_100])
+                    
+                if upload:
+                    wandb.log({"epoch":epoch,
+                            "outer_actor_loss": np.mean(epoch_loss["actor_loss"]),
+                            "outer_critic_loss": np.mean(epoch_loss["critic_loss"]),
+                            "temp_loss": np.mean(epoch_loss["temp_loss"]),
+                            "temp": np.mean(epoch_loss["temp"]),
+                            "inner_actor_loss": np.mean(inner_epoch_loss["inner_actor_loss"]), 
+                            "inner_critic_loss": np.mean(inner_epoch_loss["inner_critic_loss"]),
+                            "inner_temp_loss": np.mean(inner_epoch_loss["inner_temp_loss"]),
+                            "inner_temp": np.mean(inner_epoch_loss["inner_temp"]),
+                            "Oracle_1.0": test_score_1_after_100,
+                            "Oracle_0.995": test_score_after_100})
             
 
             # Save model parameters

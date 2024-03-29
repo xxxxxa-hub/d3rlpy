@@ -3,7 +3,7 @@ from typing import Optional
 import torch
 import torch.nn.functional as F
 from torch import nn
-
+import pdb
 from ..encoders import Encoder, EncoderWithAction
 from .base import (
     ContinuousQFunction,
@@ -125,7 +125,8 @@ class ContinuousMeanQFunctionForwarder(ContinuousQFunctionForwarder):
         reduction: str = "mean",
     ) -> torch.Tensor:
         value = self._q_func(states, actions).q_value
-        y = rewards.unsqueeze(1) + gamma * masks.unsqueeze(1) * target
+        # y = rewards.unsqueeze(1) + gamma * masks.unsqueeze(1) * target
+        y = rewards + gamma * masks * target
         loss = F.mse_loss(value, y, reduction="none")
         return compute_reduce(loss, reduction)
 

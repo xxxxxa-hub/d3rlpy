@@ -4,9 +4,9 @@ d3rlpy/__init__.py
 d3rlpy/_version.py
 d3rlpy/base.py
 d3rlpy/cli.py
+d3rlpy/collect.py
 d3rlpy/constants.py
 d3rlpy/dataclass_utils.py
-d3rlpy/datasets.py
 d3rlpy/healthcheck.py
 d3rlpy/interface.py
 d3rlpy/itertools.py
@@ -68,6 +68,7 @@ d3rlpy/dataset/compat.py
 d3rlpy/dataset/components.py
 d3rlpy/dataset/episode_generator.py
 d3rlpy/dataset/io.py
+d3rlpy/dataset/load.py
 d3rlpy/dataset/mini_batch.py
 d3rlpy/dataset/replay_buffer.py
 d3rlpy/dataset/trajectory_slicers.py

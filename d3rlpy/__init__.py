@@ -53,4 +53,4 @@ def seed(n: int) -> None:
 
 
 # run healthcheck
-run_healthcheck()
+# run_healthcheck()

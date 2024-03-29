@@ -61,6 +61,9 @@ from ..utility import (
     build_scalers_with_transition_picker,
 )
 from .explorers import Explorer
+from ...utils import save_policy,run
+import pandas as pd
+import imageio
 
 __all__ = [
     "QLearningAlgoImplBase",
@@ -166,6 +169,18 @@ class QLearningAlgoImplBase(ImplBase):
 
 TQLearningImpl = TypeVar("TQLearningImpl", bound=QLearningAlgoImplBase)
 TQLearningConfig = TypeVar("TQLearningConfig", bound=LearnableConfig)
+
+import matplotlib.pyplot as plt 
+from matplotlib import animation 
+
+def display_frames_as_gif(frames):
+    patch = plt.imshow(frames[0])
+    plt.axis('off')
+    def animate(i):
+        patch.set_data(frames[i])
+
+    anim = animation.FuncAnimation(plt.gcf(), animate, frames = len(frames), interval=1)
+    anim.save('./breakout_result.gif', writer='ffmpeg', fps=30)
 
 
 class QLearningAlgoBase(
@@ -376,22 +391,24 @@ class QLearningAlgoBase(
 
     def fit(
         self,
-        dataloader: Generator,
+        method: str,
         dataset: Optional[Dict[str, float]],
-        n_steps: int,
-        n_steps_per_epoch: int = 10000,
-        experiment_name: Optional[str] = None,
-        with_timestamp: bool = True,
-        logger_adapter: LoggerAdapterFactory = FileAdapterFactory(),
+        n_epoch: int = 100,
         show_progress: bool = True,
         save_interval: int = 1,
         evaluators: Optional[Dict[str, EvaluatorProtocol]] = None,
         callback: Optional[Callable[[Self, int, int], None]] = None,
         epoch_callback: Optional[Callable[[Self, int, int], None]] = None,
         dir_path: str = None,
+        seed: int = 0,
         env_name: str = None,
         decay_epoch: int = 5,
         lr_decay: float = 0.96,
+        collect_epoch: int = 50,
+        estimator_lr: float = 0.003,
+        estimator_lr_decay: float = 0.86,
+        temp: float = 1.0,
+        temp_decay: float = 0.95,
         algo: str = None,
         upload: bool = False,
         collect: bool = False
@@ -424,47 +441,63 @@ class QLearningAlgoBase(
         Returns:
             List of result tuples (epoch, metrics) per epoch.
         """
-        self.fitter(
-                dataloader,
-                dataset,
-                n_steps,
-                n_steps_per_epoch,
-                experiment_name,
-                with_timestamp,
-                logger_adapter,
-                show_progress,
-                save_interval,
-                evaluators,
-                callback,
-                epoch_callback,
-                dir_path,
-                env_name,
-                decay_epoch,
-                lr_decay,
-                algo,
-                upload,
-                collect
-            )
-        
+        if method == "baseline1":
+            self.fitter_1(
+                dataset=dataset,
+                n_epoch=n_epoch,
+                show_progress=show_progress,
+                save_interval=save_interval,
+                evaluators=evaluators,
+                callback=callback,
+                epoch_callback=epoch_callback,
+                dir_path=dir_path,
+                seed=seed,
+                env_name=env_name,
+                decay_epoch=decay_epoch,
+                lr_decay=lr_decay,
+                collect_epoch=collect_epoch,
+                algo=algo,
+                upload=upload,
+                collect=collect
+                )
+        elif method == "baseline2":
+            self.fitter_2(
+                dataset=dataset,
+                n_epoch=n_epoch,
+                show_progress=show_progress,
+                save_interval=save_interval,
+                evaluators=evaluators,
+                callback=callback,
+                epoch_callback=epoch_callback,
+                dir_path=dir_path,
+                seed=seed,
+                env_name=env_name,
+                decay_epoch=decay_epoch,
+                lr_decay=lr_decay,
+                collect_epoch=collect_epoch,
+                estimator_lr=estimator_lr,
+                estimator_lr_decay=estimator_lr_decay,
+                temp=temp,
+                algo=algo,
+                upload=upload,
+                collect=collect
+                )
 
-    def fitter(
+    def fitter_1(
         self,
-        dataloader: Generator,
         dataset: Optional[Dict[str, float]],
-        n_steps: int,
-        n_steps_per_epoch: int = 10000,
-        experiment_name: Optional[str] = None,
-        with_timestamp: bool = True,
-        logger_adapter: LoggerAdapterFactory = FileAdapterFactory(),
+        n_epoch: int = 100,
         show_progress: bool = True,
         save_interval: int = 1,
         evaluators: Optional[Dict[str, EvaluatorProtocol]] = None,
         callback: Optional[Callable[[Self, int, int], None]] = None,
         epoch_callback: Optional[Callable[[Self, int, int], None]] = None,
         dir_path: str = None,
+        seed: int = 0,
         env_name: str = None,
         decay_epoch: int = 5,
         lr_decay: float = 0.96,
+        collect_epoch: int = 50,
         algo: str = None,
         upload: bool = False,
         collect: bool = False
@@ -517,7 +550,6 @@ class QLearningAlgoBase(
             writer.writerow(["Epoch", "actor_loss", "critic_loss", "temp_loss", "temp", "Oracle_1.0", "Oracle"])  # 写入标题
 
         # training loop
-        n_epochs = n_steps // n_steps_per_epoch
         total_step = 0
 
         scheduler_actor = optim.lr_scheduler.StepLR(self._impl.modules.actor_optim, step_size=decay_epoch, gamma=lr_decay)
@@ -525,24 +557,36 @@ class QLearningAlgoBase(
 
         if upload:
             new_run = wandb.init(
-                project="{}".format(env_name),
-                name="Baseline-{}-{}-{}".format(self.config.actor_learning_rate,
+                project="{}-{}".format(env_name, 2),
+                name="Baseline1-{}-{}-{}-{}-{}-{}".format(self.config.actor_learning_rate,
                                         self.config.critic_learning_rate,
-                                        algo),
+                                        decay_epoch, lr_decay, algo, seed),
                 config={"actor_learning_rate": self.config.actor_learning_rate,
                         "critic_learning_rate": self.config.critic_learning_rate,
+                        "decay_epoch": decay_epoch,
+                        "lr_decay": lr_decay,
                         "algo": algo}
             )
 
 
-        for epoch in range(1, n_epochs + 1):
+        for epoch in range(1, n_epoch + 1):
             # dict to add incremental mean losses to epoch
             epoch_loss = defaultdict(list)
-
+            
+            behavior_dataset = D4rlDataset(
+                dataset,
+                normalize_states=False,
+                normalize_rewards=False,
+                noise_scale=0.0,
+                bootstrap=False)
+            
+            dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
+            dataloader = iter(dataloader)
+            
             range_gen = tqdm(
-                range(n_steps_per_epoch),
+                range(len(behavior_dataset) // self._config.batch_size),
                 disable=not show_progress,
-                desc=f"Epoch {int(epoch)}/{n_epochs}",
+                desc=f"Epoch {int(epoch)}/{n_epoch}",
             )
 
             for itr in range_gen:
@@ -577,24 +621,16 @@ class QLearningAlgoBase(
             if epoch_callback:
                 epoch_callback(self, epoch, total_step)
 
-            if epoch % 5 ==0:
+            if epoch <= collect_epoch: # and epoch % 5 == 0
                 if evaluators:
                     for name, evaluator in evaluators.items():
-                        test_score_1, test_score, transitions = evaluator(self) # rollout 10条trajectory时长3.75s
+                        test_score_1, _, test_score, _, transitions = evaluator(self) # rollout 10条trajectory时长3.75s
                 
                 if collect:
                     for k,v in transitions.items():
                         dataset[k] = np.append(dataset[k], v, axis=0)
 
-                    behavior_dataset = D4rlDataset(
-                        dataset,
-                        normalize_states=False,
-                        normalize_rewards=False,
-                        noise_scale=0.0,
-                        bootstrap=False)
-                    new_dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
-                    dataloader = infinite_loader(new_dataloader,behavior_dataset)
-
+                   
                 with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerow([epoch, np.mean(epoch_loss["actor_loss"]), 
@@ -612,6 +648,31 @@ class QLearningAlgoBase(
                             "temp": np.mean(epoch_loss["temp"]),
                             "Oracle_1.0": test_score_1,
                             "Oracle_0.995": test_score})
+            
+            elif epoch > collect_epoch: # and epoch % 5 == 0
+                if evaluators:
+                    for name, evaluator in evaluators.items():
+                        test_score_1, test_score, transitions = evaluator(self) # rollout 10条trajectory时长3.75s
+                
+                
+                with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
+                    writer = csv.writer(file)
+                    writer.writerow([epoch, np.mean(epoch_loss["actor_loss"]), 
+                                        np.mean(epoch_loss["critic_loss"]),
+                                        np.mean(epoch_loss["temp_loss"]),
+                                        np.mean(epoch_loss["temp"]),
+                                        test_score_1,
+                                        test_score])
+                
+                if upload:
+                    wandb.log({"epoch":epoch,
+                            "outer_actor_loss": np.mean(epoch_loss["actor_loss"]),
+                            "outer_critic_loss": np.mean(epoch_loss["critic_loss"]),
+                            "temp_loss": np.mean(epoch_loss["temp_loss"]),
+                            "temp": np.mean(epoch_loss["temp"]),
+                            "Oracle_1.0": test_score_1,
+                            "Oracle_0.995": test_score})
+            
                     
             # save model parameters
             if epoch % save_interval == 0:
@@ -620,7 +681,260 @@ class QLearningAlgoBase(
             scheduler_actor.step()
             scheduler_critic.step()
                 
+
+    def fitter_2(
+            self,
+            dataset: Optional[Dict[str, float]],
+            n_epoch: int,
+            show_progress: bool = True,
+            save_interval: int = 1,
+            evaluators: Optional[Dict[str, EvaluatorProtocol]] = None,
+            callback: Optional[Callable[[Self, int, int], None]] = None,
+            epoch_callback: Optional[Callable[[Self, int, int], None]] = None,
+            dir_path: str = None,
+            seed: int = 0,
+            env_name: str = None,
+            decay_epoch: int = 5,
+            lr_decay: float = 0.96,
+            collect_epoch: int = 50,
+            estimator_lr: float = 0.003,
+            estimator_lr_decay: float = 0.86,
+            temp: float = 1.0,
+            algo: str = None,
+            upload: bool = False,
+            collect: bool = False
+        ) -> Generator[Tuple[int, Dict[str, float]], None, None]:
+            """Iterate over epochs steps to train with the given dataset. At each
+            iteration algo methods and properties can be changed or queried.
+
+            .. code-block:: python
+
+                for epoch, metrics in algo.fitter(episodes):
+                    my_plot(metrics)
+                    algo.save_model(my_path)
+
+            Args:
+                dataset: Offline dataset to train.
+                n_steps: Number of steps to train.
+                n_steps_per_epoch: Number of steps per epoch. This value will
+                    be ignored when ``n_steps`` is ``None``.
+                experiment_name: Experiment name for logging. If not passed,
+                    the directory name will be `{class name}_{timestamp}`.
+                with_timestamp: Flag to add timestamp string to the last of
+                    directory name.
+                logger_adapter: LoggerAdapterFactory object.
+                show_progress: Flag to show progress bar for iterations.
+                save_interval: Interval to save parameters.
+                evaluators: List of evaluators.
+                callback: Callable function that takes ``(algo, epoch, total_step)``
+                    , which is called every step.
+                epoch_callback: Callable function that takes
+                    ``(algo, epoch, total_step)``, which is called at the end of
+                    every epoch.
+
+            Returns:
+                Iterator yielding current epoch and metrics dict.
+            """
+            if self._impl is None:
+                LOG.debug("Building models...")
+                action_size = evaluators["environment"]._env.unwrapped.action_space.shape[0]
+                observation_shape = evaluators["environment"]._env.unwrapped.observation_space.shape
+                self.create_impl(observation_shape, action_size)
+                LOG.debug("Models have been built.")
+            else:
+                LOG.warning("Skip building models since they're already built.")
+
+            if not os.path.exists(dir_path):
+                os.makedirs(dir_path)
+
+            with open("{}/loss.csv".format(dir_path), 'w', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow(["Epoch", "actor_loss", "critic_loss", "temp_loss", "temp",
+                                 "normalized_reward_incentive", "Oracle_1.0", "Oracle"])  # 写入标题
+
+            # training loop
+            total_step = 0
+            reward_incentive_list = []
+            normalized_reward_incentive = torch.tensor(0.0,dtype=torch.float32,device=self._device)
+
+            scheduler_actor = optim.lr_scheduler.StepLR(self._impl.modules.actor_optim, step_size=decay_epoch, gamma=lr_decay)
+            scheduler_critic = optim.lr_scheduler.StepLR(self._impl.modules.critic_optim, step_size=decay_epoch, gamma=lr_decay)
+
+            if upload:
+                new_run = wandb.init(
+                    project="{}-{}".format(env_name, 2),
+                    name="Baseline2-{}-{}-{}-{}-{}-{}-{}".format(self.config.actor_learning_rate,
+                                            self.config.critic_learning_rate,
+                                            decay_epoch, lr_decay, temp, algo, seed),
+                    config={"actor_learning_rate": self.config.actor_learning_rate,
+                            "critic_learning_rate": self.config.critic_learning_rate,
+                            "decay_epoch": decay_epoch,
+                            "lr_decay": lr_decay,
+                            "algo": algo}
+                )
+
+
+            for epoch in range(1, n_epoch + 1):
+                # dict to add incremental mean losses to epoch
+                epoch_loss = defaultdict(list)
+
+                behavior_dataset = D4rlDataset(
+                dataset,
+                normalize_states=False,
+                normalize_rewards=False,
+                noise_scale=0.0,
+                bootstrap=False)
+            
+                dataloader = DataLoader(behavior_dataset, batch_size=256, shuffle=True, drop_last=True, num_workers=4)
+                dataloader = iter(dataloader)
                 
+                range_gen = tqdm(
+                    range(len(behavior_dataset) // self._config.batch_size),
+                    disable=not show_progress,
+                    desc=f"Epoch {int(epoch)}/{n_epoch}",
+                )
+
+
+                if len(reward_incentive_list) >= 10:
+                    reward_incentive_reduce_mean = reward_incentive - torch.tensor(np.mean(reward_incentive_list))
+                    normalized_reward_incentive = reward_incentive_reduce_mean / torch.std(torch.tensor(reward_incentive_list), unbiased=False)
+                
+                for itr in range_gen:
+                    # pick transitions
+                    states, actions, next_states, rewards, masks, _, _ = next(dataloader)
+
+                    states = states.to(self._device)
+                    actions = actions.to(self._device)
+                    rewards = rewards.to(self._device)
+                    next_states = next_states.to(self._device)
+                    masks = masks.to(self._device)
+
+
+                    loss = self.update(states, actions, next_states, rewards + temp * normalized_reward_incentive, masks)
+                    # record metrics
+                    for name, val in loss.items():
+                        epoch_loss[name].append(val)
+
+                    # update progress postfix with losses
+                    if itr % 10 == 0:
+                        mean_loss = {
+                            k: np.mean(v) for k, v in epoch_loss.items()
+                        }
+                        range_gen.set_postfix(mean_loss)
+
+                    total_step += 1
+
+                    # call callback if given
+                    if callback:
+                        callback(self, epoch, total_step)
+
+                # call epoch_callback if given
+                if epoch_callback:
+                    epoch_callback(self, epoch, total_step)
+
+                if epoch <= collect_epoch: # and epoch % 5 == 0
+                    if evaluators:
+                        for name, evaluator in evaluators.items():
+                            test_score_1, _, test_score, _, transitions = evaluator(self) # rollout 10条trajectory时长3.75s
+                    
+                    # Only collect transitions when epoch <= 100
+                    # For epoch > 100, just evaluate with no collection
+                    if collect:
+                        for k,v in transitions.items():
+                            dataset[k] = np.append(dataset[k], v, axis=0)
+
+
+                    # generate reward incentive
+                    save_policy(self,dir_path)
+                    run(device=self._device.split(":")[-1],
+                        env_name=env_name,
+                        lr=estimator_lr,
+                        policy_path="{}/policy.pkl".format(dir_path),
+                        lr_decay=estimator_lr_decay,
+                        seed=seed,
+                        algo=algo)
+
+                    estimate = pd.read_csv("{}/ope.csv".format(dir_path)).iloc[0,0]
+                    reward_incentive = np.float32((estimate - test_score * (1-evaluators["environment"]._gamma)) ** 2)
+                    reward_incentive = -reward_incentive
+
+                    # store new reward_incentive into reward_list
+                    if reward_incentive not in reward_incentive_list:
+                        reward_incentive_list.append(reward_incentive)
+
+
+                    with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
+                        writer = csv.writer(file)
+                        writer.writerow([epoch, np.mean(epoch_loss["actor_loss"]), 
+                                            np.mean(epoch_loss["critic_loss"]),
+                                            np.mean(epoch_loss["temp_loss"]),
+                                            np.mean(epoch_loss["temp"]),
+                                            normalized_reward_incentive,
+                                            test_score_1,
+                                            test_score])
+                    
+                    if upload:
+                        wandb.log({"epoch":epoch,
+                                "outer_actor_loss": np.mean(epoch_loss["actor_loss"]),
+                                "outer_critic_loss": np.mean(epoch_loss["critic_loss"]),
+                                "temp_loss": np.mean(epoch_loss["temp_loss"]),
+                                "temp": np.mean(epoch_loss["temp"]),
+                                "normalized_reward_incentive": normalized_reward_incentive,
+                                "Oracle_1.0": test_score_1,
+                                "Oracle_0.995": test_score})
+                
+                # difference is we do not have real value, so we use real value at 100 epoch
+                elif epoch > collect_epoch: # and epoch % 5 == 0
+                    if evaluators:
+                        for name, evaluator in evaluators.items():
+                            test_score_1_after_100, test_score_after_100, transitions = evaluator(self) # rollout 10条trajectory时长3.75s
+
+                    # generate reward incentive
+                    save_policy(self,dir_path)
+                    run(device=self._device.split(":")[-1],
+                        env_name=env_name,
+                        lr=estimator_lr,
+                        policy_path="{}/policy.pkl".format(dir_path),
+                        lr_decay=estimator_lr_decay,
+                        seed=seed,
+                        algo=algo)
+
+                    estimate = pd.read_csv("{}/ope.csv".format(dir_path)).iloc[0,0]
+                    reward_incentive = np.float32((estimate - test_score * (1-evaluators["environment"]._gamma)) ** 2)
+                    reward_incentive = -reward_incentive
+
+                    # store new reward_incentive into reward_list
+                    if reward_incentive not in reward_incentive_list:
+                        reward_incentive_list.append(reward_incentive)
+
+
+                    with open("{}/loss.csv".format(dir_path), 'a', newline='') as file:
+                        writer = csv.writer(file)
+                        writer.writerow([epoch, np.mean(epoch_loss["actor_loss"]), 
+                                            np.mean(epoch_loss["critic_loss"]),
+                                            np.mean(epoch_loss["temp_loss"]),
+                                            np.mean(epoch_loss["temp"]),
+                                            normalized_reward_incentive,
+                                            test_score_1_after_100,
+                                            test_score_after_100])
+                    
+                    if upload:
+                        wandb.log({"epoch":epoch,
+                                "outer_actor_loss": np.mean(epoch_loss["actor_loss"]),
+                                "outer_critic_loss": np.mean(epoch_loss["critic_loss"]),
+                                "temp_loss": np.mean(epoch_loss["temp_loss"]),
+                                "temp": np.mean(epoch_loss["temp"]),
+                                "normalized_reward_incentive": normalized_reward_incentive,
+                                "Oracle_1.0": test_score_1_after_100,
+                                "Oracle_0.995": test_score_after_100})
+
+                        
+                # save model parameters
+                if epoch % save_interval == 0:
+                    torch.save(self, "{}/model_{}.pt".format(dir_path,epoch))
+                
+                scheduler_actor.step()
+                scheduler_critic.step() 
 
 
     def fit_online(
@@ -673,14 +987,6 @@ class QLearningAlgoBase(
         # check action-space
         assert_action_space_with_env(self, env)
 
-        # setup logger
-        if experiment_name is None:
-            experiment_name = self.__class__.__name__ + "_online"
-        logger = D3RLPyLogger(
-            adapter_factory=logger_adapter,
-            experiment_name=experiment_name,
-            with_timestamp=with_timestamp,
-        )
 
         # initialize algorithm parameters
         build_scalers_with_env(self, env)
@@ -693,8 +999,7 @@ class QLearningAlgoBase(
         else:
             LOG.warning("Skip building models since they're already built.")
 
-        # save hyperparameters
-        save_config(self, logger, 0)
+        frames = []
 
         # switch based on show_progress flag
         xrange = trange if show_progress else range
@@ -703,90 +1008,95 @@ class QLearningAlgoBase(
         observation, _ = env.reset()
         rollout_return = 0.0
         for total_step in xrange(1, n_steps + 1):
-            with logger.measure_time("step"):
-                # sample exploration action
-                with logger.measure_time("inference"):
-                    if total_step < random_steps:
-                        action = env.action_space.sample()
-                    elif explorer:
-                        x = observation.reshape((1,) + observation.shape)
-                        action = explorer.sample(self, x, total_step)[0]
-                    else:
-                        action = self.sample_action(
-                            np.expand_dims(observation, axis=0)
-                        )[0]
+            frames.append(env.render())
+            # sample exploration action
+            if total_step < random_steps:
+                action = env.action_space.sample()
+            elif explorer:
+                x = observation.reshape((1,) + observation.shape)
+                action = explorer.sample(self, x, total_step)[0]
+            else:
+                action = self.sample_action(
+                    np.expand_dims(observation, axis=0)
+                )[0]
 
-                # step environment
-                with logger.measure_time("environment_step"):
-                    (
-                        next_observation,
-                        reward,
-                        terminal,
-                        # truncated,
-                        _,
-                    ) = env.step(action)
-                    rollout_return += float(reward)
+            # step environment
+            (
+                next_observation,
+                reward,
+                terminal,
+                truncated, # 
+                _,
+            ) = env.step(action)
+            rollout_return += float(reward)
 
-                clip_episode = terminal # or truncated
+            clip_episode = terminal or truncated
 
-                # store observation
-                buffer.append(observation, action, float(reward))
+            # store observation
+            buffer.append(observation, action, float(reward))
 
-                # reset if terminated
-                if clip_episode:
-                    buffer.clip_episode(terminal)
-                    observation, _ = env.reset()
-                    logger.add_metric("rollout_return", rollout_return)
-                    rollout_return = 0.0
-                else:
-                    observation = next_observation
+            # reset if terminated
+            if clip_episode:
+                buffer.clip_episode(terminal)
+                observation, _ = env.reset()
+                print("Rollout return:", rollout_return)
+                rollout_return = 0.0
+            else:
+                observation = next_observation
 
-                # psuedo epoch count
-                epoch = total_step // n_steps_per_epoch
+            # psuedo epoch count
+            epoch = total_step // n_steps_per_epoch
 
-                if (
-                    total_step > update_start_step
-                    and buffer.transition_count > self.batch_size
-                ):
-                    if total_step % update_interval == 0:
-                        # sample mini-batch
-                        with logger.measure_time("sample_batch"):
-                            batch = buffer.sample_transition_batch(
-                                self.batch_size
-                            )
+            if (
+                total_step > update_start_step
+                and buffer.transition_count > self.batch_size
+            ):
+                if total_step % update_interval == 0:
+                    # sample mini-batch
+                    batch = buffer.sample_transition_batch(
+                        self.batch_size
+                    )
+                    observations = batch.observations
+                    actions = batch.actions
+                    rewards = batch.rewards
+                    next_observations = batch.next_observations
+                    terminals = batch.terminals
 
-                        # update parameters
-                        with logger.measure_time("algorithm_update"):
-                            loss = self.update(batch)
+                    states = torch.tensor(observations, dtype=torch.float32,device=self._device)
+                    actions = torch.tensor(actions, dtype=torch.float32,device=self._device)
+                    next_states = torch.tensor(next_observations, dtype=torch.float32,device=self._device)
+                    rewards = torch.tensor(rewards, dtype=torch.float32,device=self._device)
+                    masks = torch.tensor(terminals, dtype=torch.float32,device=self._device)
 
-                        # record metrics
-                        for name, val in loss.items():
-                            logger.add_metric(name, val)
+                    # update parameters
+                    loss = self.update(states=states,
+                                       actions=actions,
+                                       next_states=next_states,
+                                       rewards=rewards,
+                                       masks=masks)
 
-                # call callback if given
-                if callback:
-                    callback(self, epoch, total_step)
+                    # record metrics
+
+            # call callback if given
+            if callback:
+                callback(self, epoch, total_step)
 
             if epoch > 0 and total_step % n_steps_per_epoch == 0:
                 # evaluation
                 if eval_env:
-                    with logger.measure_time("evaluate"):
-                        eval_score = evaluate_qlearning_with_environment(
-                            self, eval_env, epsilon=eval_epsilon, gamma=0.995, n_trials=10
-                        )
-                        logger.add_metric("evaluation", eval_score)
+                    eval_score = evaluate_qlearning_with_environment(
+                        self, eval_env, epsilon=eval_epsilon, gamma=0.995, n_trials=10
+                    )
 
-                if epoch % save_interval == 0:
-                    logger.save_model(total_step, self, 0)
-
-                # save metrics
-                logger.commit(epoch, total_step)
+                    print("Eval score:", eval_score[0])
+                # if epoch % save_interval == 0:
+                #     logger.save_model(total_step, self, 0)
 
         # clip the last episode
         buffer.clip_episode(False)
+        imageio.mimsave('/tmp/mountain_car_continuous.gif', frames, fps=30)
+        # display_frames_as_gif(frames)
 
-        # close logger
-        logger.close()
 
     def collect(
         self,
