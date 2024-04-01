@@ -10,3 +10,4 @@ structlog==23.2.0
 colorama==0.4.6
 gymnasium==0.29.1
 dataclasses-json==0.6.2
+wandb

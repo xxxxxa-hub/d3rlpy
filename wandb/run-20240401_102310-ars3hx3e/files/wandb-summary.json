@@ -1,0 +1,1 @@
+{"epoch": 3, "outer_actor_loss": 1.3924098725796972, "outer_critic_loss": 13.503019226240928, "temp_loss": 1.2806838600678432, "temp": 0.7609762371658972, "normalized_reward_incentive": 0.0, "Oracle_1.0": -859.7411445175377, "Oracle_0.995": -530.1319125796565, "_timestamp": 1711938270.7751465, "_runtime": 80.31707644462585, "_step": 2}

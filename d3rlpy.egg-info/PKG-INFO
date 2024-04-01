@@ -13,3 +13,4 @@ Requires-Dist: structlog==23.2.0
 Requires-Dist: colorama==0.4.6
 Requires-Dist: gymnasium==0.29.1
 Requires-Dist: dataclasses-json==0.6.2
+Requires-Dist: wandb
