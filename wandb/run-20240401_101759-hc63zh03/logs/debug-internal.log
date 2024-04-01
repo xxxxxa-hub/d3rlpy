@@ -455,3 +455,1269 @@
 2024-04-01 10:24:48,635 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
 2024-04-01 10:24:49,101 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
 2024-04-01 10:24:51,103 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:24:52,693 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:24:53,104 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:24:55,109 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:24:57,112 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:24:57,812 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:24:59,113 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:00,953 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:25:01,120 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:02,879 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:03,121 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:03,624 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:25:03,625 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:25:03,636 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:25:05,125 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:07,128 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:08,025 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:09,131 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:13,033 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:15,724 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:25:15,731 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:25:15,731 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:25:15,732 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:25:16,152 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:25:18,154 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:18,156 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:18,628 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:25:18,633 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:25:18,634 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:25:19,156 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:21,156 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:23,157 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:23,168 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:25,158 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:27,160 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:28,261 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:29,161 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:30,955 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:25:31,161 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:33,162 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:33,412 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:33,636 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:25:33,641 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:25:33,642 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:25:35,163 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:37,164 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:38,475 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:39,168 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:41,173 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:43,174 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:43,540 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:45,175 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:47,178 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:48,625 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:48,637 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:25:48,639 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:25:48,643 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:25:49,179 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:51,180 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:53,181 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:53,676 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:25:55,181 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:57,187 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:59,188 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:25:59,456 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:00,952 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:26:03,637 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:26:03,639 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:26:03,639 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:26:05,208 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:06,008 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:26:06,012 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:26:06,012 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:26:06,024 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:26:06,192 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:26:08,195 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:09,196 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:10,239 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:11,196 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:13,200 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:15,208 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:15,412 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:17,205 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:18,639 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:26:18,639 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:26:18,649 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:26:19,206 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:20,424 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:21,209 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:23,210 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:25,210 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:25,471 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:27,211 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:29,212 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:30,515 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:30,962 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:26:31,215 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:33,216 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:33,640 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:26:33,641 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:26:33,684 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:26:35,222 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:35,597 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:37,224 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:39,225 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:40,686 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:41,226 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:43,227 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:46,453 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:48,641 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:26:48,641 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:26:48,645 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:26:52,048 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:52,114 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:26:52,115 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:26:52,115 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:26:52,116 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:26:52,233 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:26:54,235 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:55,234 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:57,140 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:26:57,235 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:26:59,236 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:00,956 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:27:01,244 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:02,157 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:03,245 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:03,642 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:27:03,642 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:27:03,647 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:27:05,247 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:07,249 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:07,317 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:09,249 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:11,250 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:12,358 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:13,251 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:15,251 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:17,252 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:17,364 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:18,642 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:27:18,643 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:27:18,685 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:27:19,254 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:21,255 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:22,461 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:23,258 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:25,259 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:27,260 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:27,519 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:29,263 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:30,954 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:27:32,955 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:33,642 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:27:33,643 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:27:33,648 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:27:37,619 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:27:37,620 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:27:37,620 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:27:37,620 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:27:37,969 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:38,268 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:27:38,268 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:39,269 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:40,301 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:41,301 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:43,056 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:43,302 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:45,303 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:47,308 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:48,107 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:48,643 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:27:48,643 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:27:48,649 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:27:49,311 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:51,315 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:53,112 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:53,316 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:55,321 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:57,324 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:27:58,113 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:27:59,325 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:00,957 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:28:01,328 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:03,330 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:03,403 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:03,643 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:28:03,643 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:28:03,688 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:28:05,334 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:07,336 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:08,436 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:09,338 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:11,339 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:13,340 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:13,522 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:15,341 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:17,342 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:18,636 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:18,649 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:28:18,649 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:28:18,651 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:28:23,939 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:24,399 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:28:24,400 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:28:24,400 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:28:24,401 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:28:25,349 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:28:27,351 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:29,036 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:29,351 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:30,963 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:28:31,353 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:33,362 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:33,659 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:28:33,664 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:28:33,665 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:28:34,488 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:35,365 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:37,368 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:39,371 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:39,525 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:41,371 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:43,372 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:44,529 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:45,376 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:47,377 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:48,660 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:28:48,663 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:28:48,663 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:28:49,379 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:49,600 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:51,380 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:53,381 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:54,680 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:28:55,382 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:58,384 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:28:59,714 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:00,385 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:00,964 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:29:02,386 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:03,659 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:29:03,661 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:29:03,663 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:29:04,387 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:05,136 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:06,388 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:10,134 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:13,404 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:29:13,406 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:29:13,406 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:29:13,409 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:29:14,397 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:29:15,169 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:15,397 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:16,398 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:18,398 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:18,661 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:29:18,664 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:29:18,668 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:29:20,258 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:20,400 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:22,404 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:24,405 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:25,298 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:26,407 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:28,408 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:30,329 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:30,409 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:30,960 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:29:32,413 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:33,661 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:29:33,661 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:29:33,661 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:29:34,416 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:35,398 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:36,417 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:38,420 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:40,416 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:40,424 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:42,425 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:44,427 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:45,517 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:46,428 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:48,432 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:48,661 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:29:48,664 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:29:48,665 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:29:50,436 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:50,520 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:29:52,440 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:54,441 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:29:56,354 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:00,964 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:30:01,303 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:30:01,303 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:30:01,304 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:30:01,304 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:30:01,349 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:01,447 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:30:03,448 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:03,674 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:30:03,676 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:30:03,726 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:30:04,448 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:06,371 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:06,453 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:08,455 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:10,456 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:11,452 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:12,464 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:14,460 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:16,461 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:16,466 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:18,472 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:18,662 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:30:18,664 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:30:18,674 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:30:20,469 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:21,537 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:22,470 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:24,476 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:26,475 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:26,542 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:28,480 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:30,484 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:30,962 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:30:31,573 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:32,484 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:33,667 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:30:33,668 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:30:33,676 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:30:34,483 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:36,488 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:36,582 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:38,491 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:40,501 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:42,351 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:42,501 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:47,385 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:48,668 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:30:48,669 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:30:48,681 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:30:49,765 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:30:49,768 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:30:49,768 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:30:49,772 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:30:50,506 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:30:51,507 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:52,416 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:52,507 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:54,509 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:56,511 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:30:57,518 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:30:58,513 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:00,519 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:00,963 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:31:02,524 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:02,585 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:03,668 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:31:03,668 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:31:03,712 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:31:04,528 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:06,529 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:07,614 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:08,530 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:10,533 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:12,535 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:12,715 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:14,536 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:16,539 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:17,838 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:18,540 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:18,667 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:31:18,668 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:31:18,685 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:31:20,542 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:22,543 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:22,996 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:24,544 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:26,545 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:28,154 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:28,549 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:30,978 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:31:33,665 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:33,668 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:31:33,669 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:31:33,687 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:31:36,427 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:31:36,428 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:31:36,429 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:31:36,429 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:31:36,552 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:31:38,553 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:38,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:40,556 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:42,557 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:43,762 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:44,558 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:46,559 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:48,561 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:48,672 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:31:48,672 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:31:48,716 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:31:48,984 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:50,568 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:52,570 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:54,128 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:31:54,573 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:56,577 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:58,584 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:31:59,160 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:00,591 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:00,976 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:32:02,589 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:03,673 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:32:03,673 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:32:03,717 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:32:04,225 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:04,600 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:06,595 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:08,600 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:09,352 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:10,608 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:12,607 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:14,472 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:14,606 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:16,607 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:18,612 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:18,676 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:32:18,676 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:32:18,719 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:32:20,000 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:25,004 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:26,164 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:32:26,165 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:32:26,165 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:32:26,165 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:32:26,644 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:32:28,636 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:30,088 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:30,637 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:30,970 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:32:32,636 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:33,681 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:32:33,681 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:32:33,691 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:32:34,638 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:35,125 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:36,640 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:38,640 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:40,161 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:40,644 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:42,644 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:44,647 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:45,184 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:46,650 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:48,650 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:48,681 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:32:48,684 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:32:48,691 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:32:50,224 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:50,652 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:52,656 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:54,658 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:55,250 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:32:56,661 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:32:58,664 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:00,331 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:00,662 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:00,972 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:33:02,663 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:03,681 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:33:03,683 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:33:03,692 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:33:04,667 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:05,450 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:06,664 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:10,512 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:14,590 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:33:14,592 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:33:14,592 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:33:14,592 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:33:14,674 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:33:15,580 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:16,675 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:18,676 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:18,688 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:33:18,690 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:33:18,729 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:33:20,676 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:20,724 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:22,677 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:24,678 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:25,791 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:26,679 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:28,680 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:30,681 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:30,798 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:30,974 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:33:33,682 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:33,691 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:33:33,695 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:33:33,699 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:33:35,683 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:35,826 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:37,684 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:39,685 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:40,904 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:41,686 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:43,687 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:45,689 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:45,972 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:47,690 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:48,685 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:33:48,692 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:33:48,700 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:33:49,691 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:51,002 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:33:51,693 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:53,696 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:55,697 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:33:56,996 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:00,978 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:34:02,979 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:03,204 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:34:03,205 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:34:03,206 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:34:03,207 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:34:03,724 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:34:03,736 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:34:03,737 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:34:03,770 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:34:04,724 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:05,725 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:07,726 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:08,025 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:09,728 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:11,730 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:13,162 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:13,731 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:15,737 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:17,737 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:18,169 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:18,710 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:34:18,711 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:34:18,712 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:34:19,738 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:21,740 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:23,235 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:23,743 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:25,744 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:27,745 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:28,327 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:29,752 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:30,981 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:34:31,757 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:33,355 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:33,712 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:34:33,717 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:34:33,717 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:34:33,758 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:35,760 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:37,764 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:38,500 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:39,771 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:41,772 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:43,773 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:44,047 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:48,712 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:34:48,716 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:34:48,716 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:34:49,140 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:51,892 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:34:51,900 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:34:51,900 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:34:51,901 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:34:52,782 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:34:53,782 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:54,240 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:55,782 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:57,783 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:34:59,386 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:34:59,788 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:00,981 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:35:01,793 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:03,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:35:03,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:35:03,746 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:35:03,795 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:04,497 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:05,798 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:07,798 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:09,502 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:09,800 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:11,805 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:13,812 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:14,624 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:15,814 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:17,818 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:18,716 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:35:18,718 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:35:18,719 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:35:19,628 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:19,819 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:21,821 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:23,822 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:24,722 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:25,824 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:27,824 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:29,806 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:29,828 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:30,981 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:35:31,828 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:33,716 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:35:33,717 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:35:33,721 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:35:33,832 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:34,996 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:40,000 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:40,879 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:35:40,879 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:35:40,879 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:35:40,880 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:35:41,840 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:35:41,840 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:43,844 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:45,134 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:45,844 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:47,842 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:48,720 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:35:48,724 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:35:48,724 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:35:49,843 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:50,240 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:51,844 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:53,845 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:55,270 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:35:55,848 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:57,848 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:35:59,849 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:00,303 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:00,984 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:36:01,851 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:03,722 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:36:03,722 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:36:03,729 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:36:03,853 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:05,316 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:05,854 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:07,857 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:09,857 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:10,406 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:11,862 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:13,864 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:15,492 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:15,869 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:17,878 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:18,720 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:36:18,721 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:36:18,723 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:36:19,881 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:20,588 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:21,882 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:26,216 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:30,081 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:36:30,081 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:36:30,082 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:36:30,083 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:36:30,895 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:36:30,984 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:36:31,295 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:31,896 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:33,729 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:36:33,729 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:36:33,736 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:36:33,897 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:35,904 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:36,356 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:37,908 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:39,909 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:41,371 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:41,916 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:43,918 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:45,919 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:46,458 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:47,919 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:48,726 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:36:48,726 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:36:48,727 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:36:49,920 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:51,501 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:51,921 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:53,925 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:55,923 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:56,627 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:36:57,924 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:36:59,931 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:00,983 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:37:01,688 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:01,934 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:03,729 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:37:03,729 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:37:03,732 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:37:03,939 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:05,944 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:06,712 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:07,952 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:09,949 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:11,899 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:11,952 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:16,906 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:18,731 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:37:18,732 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:37:18,774 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:37:19,588 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:37:19,589 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:37:19,589 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:37:19,589 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:37:19,961 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:37:21,924 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:21,962 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:23,964 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:25,966 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:27,009 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:27,967 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:29,972 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:30,984 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:37:31,975 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:32,035 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:33,731 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:37:33,731 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:37:33,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:37:33,982 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:35,982 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:37,097 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:37,988 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:39,988 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:41,991 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:42,148 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:43,992 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:46,993 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:47,284 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:48,736 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:37:48,736 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:37:48,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:37:48,994 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:50,995 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:52,285 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:52,996 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:55,001 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:57,002 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:37:57,302 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:37:59,003 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:00,987 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:38:01,005 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:02,988 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:03,008 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:03,737 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:38:03,737 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:38:03,744 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:38:08,103 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:10,125 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:38:10,126 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:38:10,127 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:38:10,127 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:38:11,023 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:38:13,025 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:13,128 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:15,026 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:17,027 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:18,159 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:18,738 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:38:18,739 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:38:18,745 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:38:19,028 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:21,029 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:23,031 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:23,230 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:25,033 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:27,034 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:28,296 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:29,035 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:30,985 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:38:31,041 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:33,047 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:33,352 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:33,764 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:38:33,764 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:38:33,765 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:38:35,052 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:37,057 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:38,380 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:39,059 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:41,060 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:43,063 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:43,453 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:45,066 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:47,068 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:48,480 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:48,740 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:38:48,740 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:38:48,746 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:38:49,070 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:51,076 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:53,071 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:38:53,817 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:38:58,820 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:00,234 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:39:00,235 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:39:00,235 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:39:00,236 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:39:00,986 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:39:01,089 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:39:03,090 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:03,746 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:39:03,747 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:39:03,747 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:39:04,076 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:05,093 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:07,092 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:09,097 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:09,146 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:11,100 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:13,100 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:14,255 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:15,102 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:17,103 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:18,752 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:39:18,752 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:39:18,756 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:39:19,104 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:19,453 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:21,105 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:23,106 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:24,631 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:25,108 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:27,110 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:29,120 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:29,703 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:30,988 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:39:31,123 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:33,122 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:33,752 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:39:33,756 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:39:33,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:39:34,855 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:35,123 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:37,124 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:39,126 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:39,882 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:41,128 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:43,130 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:45,178 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:48,752 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:39:48,755 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:39:48,758 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:39:50,660 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:39:50,661 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:39:50,662 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:39:50,662 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:39:50,663 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:51,156 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:39:53,157 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:55,157 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:55,761 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:39:57,160 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:39:59,162 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:00,795 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:00,987 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:40:01,166 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:03,167 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:03,753 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:40:03,753 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:40:03,796 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:40:05,168 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:05,832 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:07,169 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:09,172 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:10,924 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:11,173 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:13,175 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:15,176 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:16,077 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:17,177 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:18,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:40:18,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:40:18,759 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:40:19,178 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:21,179 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:21,194 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:23,180 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:25,181 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:26,268 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:27,182 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:29,182 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:30,989 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:40:31,183 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:31,989 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:33,755 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:40:33,756 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:40:33,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:40:37,120 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:39,069 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:40:39,070 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:40:39,071 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:40:39,071 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:40:39,192 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:40:41,264 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:42,179 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:43,266 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:45,272 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:47,232 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:47,272 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:48,756 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:40:48,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:40:48,759 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:40:49,274 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:51,273 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:52,261 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:53,280 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:55,281 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:57,284 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:40:57,398 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:40:59,286 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:00,993 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:41:01,287 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:02,495 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:03,288 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:03,756 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:41:03,757 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:41:03,760 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:41:05,288 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:07,290 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:07,596 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:09,296 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:11,297 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:12,641 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:13,299 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:15,299 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:17,301 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:17,721 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:18,756 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:41:18,759 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:41:18,764 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:41:19,301 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:21,302 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:23,308 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:23,364 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:28,376 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:30,880 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:41:30,881 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:41:30,881 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:41:30,881 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:41:30,995 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:41:31,325 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:41:32,326 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:33,327 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:33,438 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:33,758 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:41:33,758 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:41:33,762 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:41:34,332 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:35,332 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:37,336 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:38,568 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:39,337 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:41,341 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:43,342 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:43,576 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:45,343 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:47,348 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:48,576 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:48,764 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:41:48,765 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:41:48,768 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:41:49,350 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:51,352 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:53,352 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:53,637 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:55,355 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:57,355 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:41:58,748 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:41:59,357 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:00,995 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:42:01,358 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:03,359 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:03,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:42:03,760 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:42:03,765 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:42:05,360 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:07,329 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:09,364 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:11,364 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:12,808 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:13,372 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:17,806 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:18,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:42:18,760 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:42:18,766 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:42:21,651 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:42:21,659 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:42:21,659 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:42:21,660 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:42:22,390 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:42:22,391 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:22,913 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:24,393 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:26,397 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:27,980 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:28,398 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:30,400 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:30,996 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:42:32,402 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:32,986 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:33,759 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:42:33,759 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:42:33,807 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:42:34,402 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:36,405 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:37,999 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:38,407 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:40,408 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:42,409 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:43,036 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:44,418 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:46,420 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:48,093 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:48,423 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:48,761 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:42:48,761 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:42:48,781 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:42:50,430 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:52,431 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:53,180 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:54,437 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:56,440 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:42:58,199 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:42:58,441 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:00,442 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:00,999 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:43:02,443 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:03,736 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:03,763 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:43:03,768 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:43:03,784 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:43:04,444 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:09,048 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:11,730 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:43:11,730 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:43:11,731 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:43:11,731 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:43:12,449 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:43:12,449 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:14,079 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:14,460 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:15,460 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:16,462 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:18,464 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:18,765 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:43:18,766 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:43:18,816 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:43:19,158 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:20,467 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:22,472 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:24,230 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:24,477 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:26,477 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:28,478 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:29,236 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:30,479 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:31,001 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:43:32,481 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:33,774 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:43:33,776 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:43:33,788 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:43:34,275 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:34,483 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:36,487 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:38,488 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:39,336 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:40,489 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:42,491 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:44,440 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:44,493 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:46,494 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:48,495 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:48,767 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:43:48,772 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:43:48,792 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:43:49,553 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:43:50,499 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:52,500 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:54,502 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:43:55,441 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:00,452 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:01,005 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:44:01,760 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:44:01,760 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:44:01,761 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:44:01,761 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:44:02,521 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:44:03,521 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:03,776 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:44:03,780 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:44:03,794 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:44:04,522 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:05,523 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:06,523 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:08,524 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:10,525 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:10,641 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:12,526 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:14,527 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:15,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:16,529 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:18,530 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:18,776 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:44:18,776 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:44:18,823 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:44:20,531 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:20,824 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:22,532 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:24,540 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:25,823 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:26,543 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:28,549 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:30,552 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:30,828 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:31,005 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:44:32,556 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:33,775 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:44:33,776 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:44:33,795 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:44:34,556 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:36,274 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:38,564 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:40,568 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:41,374 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:42,566 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:44,570 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:47,299 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:48,778 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:44:48,779 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:44:48,796 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:44:51,848 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:44:51,850 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:44:51,850 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:44:51,851 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:44:52,329 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:52,588 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:44:53,589 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:54,589 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:56,591 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:44:57,337 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:44:58,596 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:00,597 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:01,007 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:45:02,354 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:02,601 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:03,776 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:45:03,776 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:45:03,824 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:45:04,599 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:06,600 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:07,364 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:08,601 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:10,601 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:12,399 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:12,602 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:14,604 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:16,605 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:17,511 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:18,606 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:18,777 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:45:18,777 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:45:18,797 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:45:20,612 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:22,612 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:22,620 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:24,613 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:26,614 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:27,753 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:28,616 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:30,618 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:31,009 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:45:33,015 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:33,778 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:45:33,779 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:45:33,796 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:45:38,084 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:38,504 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:45:38,505 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:45:38,505 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:45:38,505 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:45:38,646 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:45:39,638 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:41,640 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:43,091 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:43,640 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:45,642 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:47,643 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:48,180 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:48,778 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:45:48,780 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:45:48,822 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:45:49,644 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:51,646 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:53,280 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:53,647 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:55,647 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:57,648 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:45:58,299 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:45:59,651 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:01,013 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:46:01,652 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:03,377 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:03,661 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:03,780 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:46:03,780 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:46:03,800 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:46:05,662 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:07,663 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:08,405 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:09,668 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:11,668 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:13,536 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:13,671 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:15,675 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:17,676 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:18,731 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:18,781 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:46:18,785 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:46:18,803 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:46:23,380 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 10:46:23,388 DEBUG   SenderThread:44539 [sender.py:send():379] send: history
+2024-04-01 10:46:23,388 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: summary_record
+2024-04-01 10:46:23,389 INFO    SenderThread:44539 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-01 10:46:23,695 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/wandb-summary.json
+2024-04-01 10:46:23,741 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:25,740 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:26,712 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:27,714 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:28,792 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:29,714 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:31,016 DEBUG   SenderThread:44539 [sender.py:send():379] send: stats
+2024-04-01 10:46:31,715 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:33,715 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:33,782 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:46:33,785 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:46:33,826 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:46:34,099 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:35,719 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:37,720 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:39,194 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:39,724 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:41,725 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:43,728 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:44,240 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:45,729 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:47,730 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:48,782 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 10:46:48,783 DEBUG   SenderThread:44539 [sender.py:send_request():406] send_request: stop_status
+2024-04-01 10:46:48,803 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 10:46:49,354 DEBUG   HandlerThread:44539 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 10:46:49,731 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log
+2024-04-01 10:46:51,737 INFO    Thread-12 :44539 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/featurize/d3rlpy/wandb/run-20240401_101759-hc63zh03/files/output.log

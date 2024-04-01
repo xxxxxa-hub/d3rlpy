@@ -25,3 +25,4 @@ config: {'actor_learning_rate': 1e-05, 'batch_size': 256, 'temp': 0.6, 'algo': '
 2024-04-01 09:53:37,238 INFO    MainThread:27189 [wandb_run.py:_redirect():2243] Wrapping output streams.
 2024-04-01 09:53:37,238 INFO    MainThread:27189 [wandb_run.py:_redirect():2268] Redirects installed.
 2024-04-01 09:53:37,238 INFO    MainThread:27189 [wandb_init.py:init():848] run started, returning control to user process
+2024-04-01 10:45:16,240 WARNING MsgRouterThr:27189 [router.py:message_loop():77] message_loop has been closed
